@@ -231,12 +231,12 @@ if (empty($ENV_MAIL_PRIORITY)) {
 # re-captcha configuraiton
 #
 $ENV_USE_RECAPTCHA = getenv("USE_RECAPTCHA");
-if (empty($ENV_RECAPTCHA)) {
-  $ENV_RECAPTCHA = false;
-} elseif (strtolower($ENV_RECAPTCHA) == "true") {
-  $ENV_RECAPTCHA = true;
+if (empty($ENV_USE_RECAPTCHA)) {
+  $ENV_USE_RECAPTCHA = false;
+} elseif (strtolower($ENV_USE_RECAPTCHA) == "true") {
+  $ENV_USE_RECAPTCHA = true;
 } else {
-  $ENV_RECAPTCHA = false;
+  $ENV_USE_RECAPTCHA = false;
 }
 
 $ENV_RECAPTCHA_PUBLICKEY = getenv("RECAPTCHA_PUBLICKEY");
