@@ -39,7 +39,7 @@ pipelines:
         stage: build
     environment_variables:
       RANCHER_URL: https://rancher.hutter.cloud:8080
-      SERVICE_NAME: self-service-password
+      SERVICE_NAME: password
     stages:
       - Deploy:
           jobs:
